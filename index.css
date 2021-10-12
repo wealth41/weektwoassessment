@@ -10,21 +10,27 @@
     background-image: url(./images/hero-bg-desktop.jpg);
 
 }
+.overlay-box{
+    background-color: white;
+    min-height: 350px;
+    width: 30%;
+    margin-top: 200px;
+    padding: 55px;
+    justify-content: center;
+    position: relative;
+    box-shadow: 2px 1px 10px gray;
+
+}
 
 .left-text{
     color: white;
 
 }
 .form-box{
-    background-color: white;
-    min-height: 350px;
-    width: 100%;
-    margin-top: 350px;
-    padding: 55px;
-    justify-content: center;
-    position: relative;
-    box-shadow: 2px 1px 10px gray;
-
+   display: flex;
+   max-width: 100%;
+   flex-direction: column;
+   width: 100%;
 }
 .mid-section{
     height: 410px;
@@ -37,6 +43,13 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+.name_email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
 .line-box{
     margin-left: 100px;
 }
@@ -52,7 +65,7 @@
 form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     
 }
 
@@ -122,13 +135,14 @@ select{
 }
 
 .reserve_button{
-    display: flex;
-    width: 100%;
+   max-width: 100%;
+    margin-top: 20px;
 }
 .reserve_button button{
 background-color: black;
-margin: 30px;
-height: 80px;
+margin: 5px;
+margin-top: 10px;
+height: 50px;
 color: white;
 width: 100%;
 border: none;
@@ -153,8 +167,8 @@ border: none;
         align-items: center;
     }
     .overlay-box{
-        max-width: 70%;
-        width: fit-content;
+        max-width: 100%;
+        width: 65%;
         height: 100%;
         margin-top: 100px;
     }
@@ -165,7 +179,7 @@ border: none;
 
     }
     .mid-section{
-        height: 350px;
+        height: 420px;
         display: flex;
         flex-direction: column;
         width: 100%;
